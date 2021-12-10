@@ -148,7 +148,7 @@ const Car = (props: ICarProps) => {
   return (
     <CarContainer>
       <CarThumbnail>
-        <img src={thumbnailUrl} />
+        <img src={thumbnailUrl} alt="thumbnail" />
       </CarThumbnail>
       <CarName>{name}</CarName>
       <PricesContainer>

@@ -48,16 +48,16 @@ const NavItems = () => {
       <Menu right styles={menuStyles}>
         <ListContainer>
           <NavItem menu>
-            <a href="#">Home</a>
+            <button >Home</button>
           </NavItem>
           <NavItem menu>
-            <a href="#">Cars</a>
+            <button >Cars</button>
           </NavItem>
           <NavItem menu>
-            <a href="#">Services</a>
+            <button >Services</button>
           </NavItem>
           <NavItem menu>
-            <a href="#">Contact Us</a>
+            <button > Contact Us</button>
           </NavItem>
         </ListContainer>
       </Menu>
@@ -66,16 +66,16 @@ const NavItems = () => {
   return (
     <ListContainer>
       <NavItem>
-        <a href="#">Home</a>
+        <button >Home</button>
       </NavItem>
       <NavItem>
-        <a href="#">Cars</a>
+        <button >Cars</button>
       </NavItem>
       <NavItem>
-        <a href="#">Services</a>
+        <button >Services</button>
       </NavItem>
       <NavItem>
-        <a href="#">Contact Us</a>
+        <button >Contact Us</button>
       </NavItem>
     </ListContainer>
   );

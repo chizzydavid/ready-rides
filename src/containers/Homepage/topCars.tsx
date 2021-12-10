@@ -13,7 +13,6 @@ import { setTopCars } from "./slice";
 import { useDispatch, useSelector } from "react-redux";
 import { createSelector } from "reselect";
 import { makeSelectTopCars } from "./selectors";
-import { RootState } from "../../app/store";
 import MoonLoader from "react-spinners/MoonLoader";
 
 const TopCarsContainer = styled.div`
@@ -98,10 +97,10 @@ const TopCars = () => {
 
   const fetchTopCars = async () => {
     setLoading(true);
-    const allCars: GetCars_cars[] | void = await carsService.getCars().catch((err) => {
+    const allCars: GetCars_cars[] | void = await carsService.getCars(true).catch((err) => {
       console.log(err);
     });
-    await wait(2000);
+    await wait(3000);
     if (allCars) setTopCars(allCars);
     setLoading(false);
   }
@@ -131,7 +130,7 @@ const TopCars = () => {
         !loading && topCars && topCars.length > 0 && (
           <CarsContainer>
             <Carousel 
-              value={current}   
+              value={current}
               onChange={handleChange} 
               slides={ topCars.map((car) => <Car {...car} />) }
               plugins={[

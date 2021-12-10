@@ -102,7 +102,7 @@ const ListItem = styled.li`
     mb-3
   `};
 
-  & > a {
+  & > button {
     ${tw`
       text-sm
     text-white
@@ -166,19 +166,19 @@ const Footer = () => {
           <HeaderTitle>Our Links</HeaderTitle>
           <LinksList>
             <ListItem>
-              <a href="#">Home</a>
+              <button >Home</button>
             </ListItem>
             <ListItem>
-              <a href="#">About Us</a>
+              <button >About Us</button>
             </ListItem>
             <ListItem>
-              <a href="#">Services</a>
+              <button >Services</button>
             </ListItem>
             <ListItem>
-              <a href="#">Models</a>
+              <button >Models</button>
             </ListItem>
             <ListItem>
-              <a href="#">Blog</a>
+              <button >Blog</button>
             </ListItem>
           </LinksList>
         </SectionContainer>
@@ -186,19 +186,19 @@ const Footer = () => {
           <HeaderTitle>Other Links</HeaderTitle>
           <LinksList>
             <ListItem>
-              <a href="#">FAQ</a>
+              <button >FAQ</button>
             </ListItem>
             <ListItem>
-              <a href="#">Contact Us</a>
+              <button >Contact Us</button>
             </ListItem>
             <ListItem>
-              <a href="#">Support</a>
+              <button >Support</button>
             </ListItem>
             <ListItem>
-              <a href="#">Privacy Policy</a>
+              <button >Privacy Policy</button>
             </ListItem>
             <ListItem>
-              <a href="#">Terms &amp; Conditions</a>
+              <button >Terms &amp; Conditions</button>
             </ListItem>
           </LinksList>
         </SectionContainer>
@@ -208,7 +208,7 @@ const Footer = () => {
             <RedIcon>
               <FontAwesomeIcon icon={faPhoneAlt} />
             </RedIcon>
-            <SmallText>+91 555-234-8469</SmallText>
+            <SmallText>+234 803 601 343 12</SmallText>
           </HorizontalContainer>
         </SectionContainer>
         <SectionContainer>

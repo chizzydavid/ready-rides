@@ -81,7 +81,7 @@ const AboutUs = () => {
   return (
     <AboutUsContainer>
       <CarContainer>
-        <img src={JeepImg} />
+        <img src={JeepImg} alt="jeep" />
       </CarContainer>
       <InfoContainer>
         <Title>Feel The Best Experience With Our Rental Deals</Title>
